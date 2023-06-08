@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docum</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+  <h1 class="intro_title"> 2 0 4 8 </h1>
+  <button id="newgame" class="controls_game-btn"> New Game </button>
+  
+  <span class="controls_score"> Score <span id="score"></span></span>
+  <span class="controls_high_score"> High Score <span id="hscore"></span> </span>
+  <section class="rules" >
+  <a href="https://www.youtube.com/watch?v=m080m7zjJzQ" target="_blank" rel="noopener noreferrer"><h2> How do I play? </h2></a> 
+  <p> Tiles with matching number values can be merged<br>
+     into a single tile, which receives the values' sum.
+  </p>
+  <p id="move"> To move the board, use the directional arrows - or swipe.</p>
+  <div class="arrows">
+   <span class="guide_arrow"> &uHar; </span>
+   <span class="guide_arrow"> &lHar; </span>
+   <span class="guide_arrow"> &rHar; </span>
+   <span class="guide_arrow"> &dHar; </span>
+  </div>
+    <p id="rule"> To win, get a 2048 tile.
+  </p>
+ </section>
+   
+   
+   <table>
+       <tr>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+       </tr>
+       <tr>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+      </tr>
+       <tr>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+      </tr>
+      <tr>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+            <td><div class="box"></div></td>
+      </tr>
+   </table>
+   <div id="overlay">
+     <h1 id="gover">Game over</h1>
+    
+   </div>
+   
+   <script type="module" src="main.js"></script>
+   <script type="module" src="swipe.js"></script>
+   <script type="module" src="sum.js"></script>
+   <script type="module" src="color.js"></script>
+   
+
+  
+</body>
+
+</html>
